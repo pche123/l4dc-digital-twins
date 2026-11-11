@@ -5,7 +5,7 @@
 **Prasad Cheema · Mahito Sugiyama**  
 National Institute of Informatics, Tokyo · L4DC 2027 submission
 
-[**Read the paper**](paper.pdf) · [**Reproduce experiments**](docs/REPRODUCIBILITY.md) · [**External benchmark inputs**](docs/DATA_SOURCES.md)
+[**Read the paper**](paper.pdf) · [**Figure/table → code map**](docs/PAPER_REPRODUCTION_MAP.md) · [**Reproduce experiments**](docs/REPRODUCIBILITY.md) · [**External benchmark inputs**](docs/DATA_SOURCES.md)
 
 ![Framework overview](figures/overview.png)
 
