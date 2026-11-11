@@ -1,6 +1,9 @@
-"""Figures 2, 4 (Lorenz neuro-symbolic), 5 (Duffing) and 7 (digital-twin evidence) of v2.4, from data/ only.
+"""Replot current main-paper Figures 2, 3 and 4, plus supplemental Duffing/dose-response figures, from archived data/*.csv.
 
-usage: python code/make_figures.py      (run from the package root)
+Run from the repository root: python code/make_figures.py
+See docs/PAPER_REPRODUCTION_MAP.md for each figure's CSV inputs and the separate experimental rerun commands.
+This script *replots archived results*; it does not regenerate their underlying experiments.
+It writes into tracked figures/ and may overwrite existing figure PDFs.
 """
 from pathlib import Path
 import sys
