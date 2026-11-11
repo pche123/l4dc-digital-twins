@@ -1,0 +1,97 @@
+system,verifier,tau,r,decisions,accepted,wrong_accepts
+Lorenz,dense,0.3,0.3,30,17,0
+Lorenz,dense,0.3,0.5,30,17,0
+Lorenz,dense,0.3,0.7,30,17,0
+Lorenz,dense,0.5,0.3,30,17,0
+Lorenz,dense,0.5,0.5,30,17,0
+Lorenz,dense,0.5,0.7,30,17,0
+Lorenz,dense,0.7,0.3,30,20,0
+Lorenz,dense,0.7,0.5,30,21,0
+Lorenz,dense,0.7,0.7,30,21,0
+Lorenz,dense,1.0,0.3,30,21,0
+Lorenz,dense,1.0,0.5,30,23,0
+Lorenz,dense,1.0,0.7,30,24,0
+Lorenz,sparse,0.3,0.3,30,9,0
+Lorenz,sparse,0.3,0.5,30,9,0
+Lorenz,sparse,0.3,0.7,30,9,0
+Lorenz,sparse,0.5,0.3,30,12,0
+Lorenz,sparse,0.5,0.5,30,12,0
+Lorenz,sparse,0.5,0.7,30,12,0
+Lorenz,sparse,0.7,0.3,30,19,0
+Lorenz,sparse,0.7,0.5,30,19,0
+Lorenz,sparse,0.7,0.7,30,19,0
+Lorenz,sparse,1.0,0.3,30,20,0
+Lorenz,sparse,1.0,0.5,30,21,0
+Lorenz,sparse,1.0,0.7,30,21,0
+Duffing,dense,0.3,0.3,30,0,0
+Duffing,dense,0.3,0.5,30,0,0
+Duffing,dense,0.3,0.7,30,0,0
+Duffing,dense,0.5,0.3,30,0,0
+Duffing,dense,0.5,0.5,30,0,0
+Duffing,dense,0.5,0.7,30,0,0
+Duffing,dense,0.7,0.3,30,0,0
+Duffing,dense,0.7,0.5,30,0,0
+Duffing,dense,0.7,0.7,30,0,0
+Duffing,dense,1.0,0.3,30,0,0
+Duffing,dense,1.0,0.5,30,0,0
+Duffing,dense,1.0,0.7,30,0,0
+Duffing,sparse,0.3,0.3,30,1,1
+Duffing,sparse,0.3,0.5,30,1,1
+Duffing,sparse,0.3,0.7,30,1,1
+Duffing,sparse,0.5,0.3,30,1,1
+Duffing,sparse,0.5,0.5,30,1,1
+Duffing,sparse,0.5,0.7,30,1,1
+Duffing,sparse,0.7,0.3,30,1,1
+Duffing,sparse,0.7,0.5,30,1,1
+Duffing,sparse,0.7,0.7,30,1,1
+Duffing,sparse,1.0,0.3,30,1,1
+Duffing,sparse,1.0,0.5,30,1,1
+Duffing,sparse,1.0,0.7,30,1,1
+Duffing noise study,dense,0.3,0.3,90,21,0
+Duffing noise study,dense,0.3,0.5,90,21,0
+Duffing noise study,dense,0.3,0.7,90,21,0
+Duffing noise study,dense,0.5,0.3,90,29,0
+Duffing noise study,dense,0.5,0.5,90,29,0
+Duffing noise study,dense,0.5,0.7,90,29,0
+Duffing noise study,dense,0.7,0.3,90,30,0
+Duffing noise study,dense,0.7,0.5,90,30,0
+Duffing noise study,dense,0.7,0.7,90,30,0
+Duffing noise study,dense,1.0,0.3,90,30,0
+Duffing noise study,dense,1.0,0.5,90,30,0
+Duffing noise study,dense,1.0,0.7,90,30,0
+Duffing noise study,sparse,0.3,0.3,90,30,0
+Duffing noise study,sparse,0.3,0.5,90,30,0
+Duffing noise study,sparse,0.3,0.7,90,30,0
+Duffing noise study,sparse,0.5,0.3,90,32,0
+Duffing noise study,sparse,0.5,0.5,90,32,0
+Duffing noise study,sparse,0.5,0.7,90,32,0
+Duffing noise study,sparse,0.7,0.3,90,33,0
+Duffing noise study,sparse,0.7,0.5,90,34,0
+Duffing noise study,sparse,0.7,0.7,90,34,0
+Duffing noise study,sparse,1.0,0.3,90,33,0
+Duffing noise study,sparse,1.0,0.5,90,35,0
+Duffing noise study,sparse,1.0,0.7,90,35,0
+Lotka-Volterra control,dense,0.3,0.3,30,0,0
+Lotka-Volterra control,dense,0.3,0.5,30,0,0
+Lotka-Volterra control,dense,0.3,0.7,30,0,0
+Lotka-Volterra control,dense,0.5,0.3,30,0,0
+Lotka-Volterra control,dense,0.5,0.5,30,0,0
+Lotka-Volterra control,dense,0.5,0.7,30,0,0
+Lotka-Volterra control,dense,0.7,0.3,30,0,0
+Lotka-Volterra control,dense,0.7,0.5,30,0,0
+Lotka-Volterra control,dense,0.7,0.7,30,0,0
+Lotka-Volterra control,dense,1.0,0.3,30,0,0
+Lotka-Volterra control,dense,1.0,0.5,30,0,0
+Lotka-Volterra control,dense,1.0,0.7,30,0,0
+Lotka-Volterra control,sparse,0.3,0.3,30,0,0
+Lotka-Volterra control,sparse,0.3,0.5,30,0,0
+Lotka-Volterra control,sparse,0.3,0.7,30,0,0
+Lotka-Volterra control,sparse,0.5,0.3,30,0,0
+Lotka-Volterra control,sparse,0.5,0.5,30,0,0
+Lotka-Volterra control,sparse,0.5,0.7,30,0,0
+Lotka-Volterra control,sparse,0.7,0.3,30,0,0
+Lotka-Volterra control,sparse,0.7,0.5,30,0,0
+Lotka-Volterra control,sparse,0.7,0.7,30,0,0
+Lotka-Volterra control,sparse,1.0,0.3,30,0,0
+Lotka-Volterra control,sparse,1.0,0.5,30,0,0
+Lotka-Volterra control,sparse,1.0,0.7,30,0,0

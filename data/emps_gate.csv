@@ -1,0 +1,29 @@
+replicate,verifier,candidate,defect,accepted,e_X,e_SX
+est-first half,cubic NARX,"exact (-v,-F)",1.4152942185882047,0,0.14082200340996223,1.5306135633839928
+est-first half,cubic NARX,"false (-v,+F)",1.5935855259700829,0,0.14082200340996223,1.5306135633839928
+est-first half,cubic NARX,"input-only (+v,-F)",2.6783833514158166,0,0.14082200340996223,1.5306135633839928
+est-first half,physics library,"exact (-v,-F)",0.44718578470890363,1,0.23911390186227507,0.6492208612169833
+est-first half,physics library,"false (-v,+F)",2.3963024895806986,0,0.23911390186227507,0.6492208612169833
+est-first half,physics library,"input-only (+v,-F)",2.657579681094467,0,0.23911390186227507,0.6492208612169833
+est-first half,"asymmetric law, both halves (reference)","exact (-v,-F)",0.17380870394294023,-1,,
+est-second half,cubic NARX,"exact (-v,-F)",1.4046664352842286,0,0.12370156867744524,1.554477439962844
+est-second half,cubic NARX,"false (-v,+F)",1.5990661345319284,0,0.12370156867744524,1.554477439962844
+est-second half,cubic NARX,"input-only (+v,-F)",2.605286623753027,0,0.12370156867744524,1.554477439962844
+est-second half,physics library,"exact (-v,-F)",0.4457566246960093,1,0.22693434255578102,0.7120128802184434
+est-second half,physics library,"false (-v,+F)",2.38627654763827,0,0.22693434255578102,0.7120128802184434
+est-second half,physics library,"input-only (+v,-F)",2.6468324078922327,0,0.22693434255578102,0.7120128802184434
+est-second half,"asymmetric law, both halves (reference)","exact (-v,-F)",0.19090857469359204,-1,,
+val-first half,cubic NARX,"exact (-v,-F)",6.977305501966264,0,0.171720292714716,6.428364927037144
+val-first half,cubic NARX,"false (-v,+F)",12.308898604703534,0,0.171720292714716,6.428364927037144
+val-first half,cubic NARX,"input-only (+v,-F)",9.201624291636003,0,0.171720292714716,6.428364927037144
+val-first half,physics library,"exact (-v,-F)",0.4227264442511147,1,0.38490374466663524,0.67159493063089
+val-first half,physics library,"false (-v,+F)",2.332606551827649,0,0.38490374466663524,0.67159493063089
+val-first half,physics library,"input-only (+v,-F)",2.5651714028490082,0,0.38490374466663524,0.67159493063089
+val-first half,"asymmetric law, both halves (reference)","exact (-v,-F)",0.16485439933235918,-1,,
+val-second half,cubic NARX,"exact (-v,-F)",1.9925341119573063,0,0.2933478681179324,2.1072910660369644
+val-second half,cubic NARX,"false (-v,+F)",2.365685381201859,0,0.2933478681179324,2.1072910660369644
+val-second half,cubic NARX,"input-only (+v,-F)",3.149197549339576,0,0.2933478681179324,2.1072910660369644
+val-second half,physics library,"exact (-v,-F)",0.4270663946701653,1,0.36460377086608003,0.7248186288502495
+val-second half,physics library,"false (-v,+F)",2.335085511904251,0,0.36460377086608003,0.7248186288502495
+val-second half,physics library,"input-only (+v,-F)",2.5719289661037963,0,0.36460377086608003,0.7248186288502495
+val-second half,"asymmetric law, both halves (reference)","exact (-v,-F)",0.17009574218994486,-1,,
