@@ -1,0 +1,11 @@
+# Install with Python 3.11-3.13; numeric exactness may vary across platforms/BLAS.
+numpy>=1.26,<3
+pandas>=2.1,<3
+scipy>=1.11,<2
+matplotlib>=3.8,<4
+scikit-learn>=1.3,<2
+joblib>=1.3,<2
+pillow>=10,<13
+numba>=0.59,<0.67
+torch>=2.2,<3
+h5py>=3.10,<4

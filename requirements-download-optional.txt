@@ -1,0 +1,2 @@
+# Optional: only for fetching public Google-Drive datasets.
+gdown>=5,<6
