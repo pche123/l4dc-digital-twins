@@ -1,5 +1,9 @@
 name: Paper LaTeX build
 on: [push, pull_request]
+
+permissions:
+  contents: write
+
 jobs:
   latex:
     runs-on: ubuntu-latest
@@ -14,3 +18,14 @@ jobs:
         with:
           name: compiled-paper
           path: main.pdf
+      - name: Keep the published paper.pdf current
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main' && github.actor != 'github-actions[bot]'
+        run: |
+          cp main.pdf paper.pdf
+          if ! git diff --quiet -- paper.pdf; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add paper.pdf
+            git commit -m "Synchronize compiled manuscript PDF [skip ci]"
+            git push origin HEAD:main
+          fi
