@@ -269,7 +269,7 @@ Neither & Self-generated trajectories are not evidence about unseen dynamics and
 
 \section{Discussion and conclusion}
 The information-closure baseline is familiar; the operational lesson is not. A digital twin can be uninformative yet make its learner overconfident, physically incorrect yet improve deployment prediction, or structurally plausible yet impossible to certify from the observed regime. These outcomes are not contradictions: \emph{information provenance}, \emph{learner-relative value}, and \emph{verifier reliability} answer different questions. A small LQR check reduces closed-loop cost excess from $77\%$ to under $3\%$, but does not establish an advantage for the gate (Supplement~\ref{app:closedloop}).
-\paragraph{Implication for digital-twin practice.} Record what knowledge each trajectory encodes; compare its downstream value against equal-size duplication, not only against no augmentation; calibrate uncertainty on independent real observations; and treat screening abstention as a request for coverage rather than proof that the physics is false. These are testable safeguards, not a guarantee that generated trajectories are useful or correct (Table~\ref{tab:regimes}). \textbf{Limitations:} ridge theory, sign-flip candidates, a simulated twin, and one device per real benchmark (Supplement~\ref{app:evaluation-profile}).
+\paragraph{Implication for digital-twin practice.} Record what knowledge each trajectory encodes; compare its downstream value against equal-size duplication, not only against no augmentation; calibrate uncertainty on independent real observations; and treat screening abstention as a request for coverage rather than proof that the physics is false. These are testable safeguards, not a guarantee that generated trajectories are useful or correct (Table~\ref{tab:regimes}). \textbf{Limitations:} ridge theory, sign-flip candidates, a simulated twin, and one device per real benchmark (Supplement~\ref{app:evaluation-profile}). \textbf{Code and archived data:} \url{https://github.com/pche123/l4dc-digital-twins}.
 
 
 \paragraph{Generative AI use.} Generative AI tools assisted ideation, derivations, coding, figures (including the illustrative renderings in Figure~\ref{fig:hero} and Supplement Figure~\ref{fig:emps-twin}), literature search and editing; the authors verified all AI-assisted content and take responsibility for the paper.
@@ -282,6 +282,7 @@ The information-closure baseline is familiar; the operational lesson is not. A d
 \makeatletter\def\presectionnum{Supplement~}\makeatother
 \renewcommand{\theHfigure}{S\arabic{figure}}\renewcommand{\theHtable}{S\arabic{table}}\renewcommand{\theHequation}{S\arabic{equation}}
 \section*{Supplementary Material}
+\noindent\textbf{Reproduction guide.} Source code, archived experimental outputs, raw-data download guidance, and an itemized map from each main-paper figure/table to scripts and CSVs are at \url{https://github.com/pche123/l4dc-digital-twins} (see \texttt{docs/}). Historical raw-input reproduction is incomplete; the repository documents the boundary explicitly.\par\medskip
 \noindent
 The following supplementary material provides full derivations, protocol details,
 additional recursive and neural results, symmetry-screening limits, digital-twin
