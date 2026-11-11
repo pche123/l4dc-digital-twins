@@ -1,0 +1,16 @@
+name: Paper LaTeX build
+on: [push, pull_request]
+jobs:
+  latex:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build manuscript and contiguous supplement
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: main.tex
+          latexmk_use_xelatex: false
+      - uses: actions/upload-artifact@v4
+        with:
+          name: compiled-paper
+          path: main.pdf
