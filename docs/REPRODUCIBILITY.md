@@ -1,5 +1,7 @@
 # Reproducibility and provenance
 
+For an item-by-item map of **every main-paper figure/table, the archived CSV inputs, plotting code and experiment commands**, see [Paper reproduction map](PAPER_REPRODUCTION_MAP.md).
+
 The repository contains the canonical v25 paper and **40 active archived experiment CSVs** under `data/`, with the relevant experiment scripts and frozen protocols available in the source tree. These original data have not been changed or regenerated merely to fit manuscript claims.
 
 In the earlier local audit, 27 active result CSVs were independently rerun and matched to the archived outputs to within a numerical tolerance of 1e-10. The prior 43-file audit also counted one **superseded certificate** and two **older Lorenz protocol outputs**; those three historical files are excluded from this public release as they are not needed for the v25 manuscript.
