@@ -1,0 +1,287 @@
+\begin{thebibliography}{40}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Abbasi-Yadkori et~al.(2011)Abbasi-Yadkori, P{\'a}l, and
+  Szepesv{\'a}ri]{abbasiyadkori2011improved}
+Yasin Abbasi-Yadkori, D{\'a}vid P{\'a}l, and Csaba Szepesv{\'a}ri.
+\newblock Improved algorithms for linear stochastic bandits.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~24, 2011.
+
+\bibitem[Alemohammad et~al.(2024)Alemohammad, Casco-Rodriguez, Luzi, Humayun,
+  Babaei, LeJeune, Siahkoohi, and Baraniuk]{alemohammad2024mad}
+Sina Alemohammad, Josue Casco-Rodriguez, Lorenzo Luzi, Ahmed~Imtiaz Humayun,
+  Hossein Babaei, Daniel LeJeune, Ali Siahkoohi, and Richard~G. Baraniuk.
+\newblock Self-consuming generative models go {MAD}.
+\newblock In \emph{International Conference on Learning Representations}, 2024.
+
+\bibitem[Bombois et~al.(2006)Bombois, Scorletti, Gevers, Van~den Hof, and
+  Hildebrand]{bombois2006least}
+Xavier Bombois, G{\'e}rard Scorletti, Michel Gevers, Paul M.~J. Van~den Hof,
+  and Roland Hildebrand.
+\newblock Least costly identification experiment for control.
+\newblock \emph{Automatica}, 42\penalty0 (10):\penalty0 1651--1662, 2006.
+
+\bibitem[Brandstetter et~al.(2022)Brandstetter, Welling, and
+  Worrall]{brandstetter2022lie}
+Johannes Brandstetter, Max Welling, and Daniel~E. Worrall.
+\newblock Lie point symmetry data augmentation for neural {PDE} solvers.
+\newblock In \emph{Proceedings of the 39th International Conference on Machine
+  Learning}, volume 162 of \emph{Proceedings of Machine Learning Research},
+  pages 2241--2256, 2022.
+
+\bibitem[Brunton et~al.(2016)Brunton, Proctor, and Kutz]{brunton2016sindy}
+Steven~L. Brunton, Joshua~L. Proctor, and J.~Nathan Kutz.
+\newblock Discovering governing equations from data by sparse identification of
+  nonlinear dynamical systems.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 113\penalty0
+  (15):\penalty0 3932--3937, 2016.
+
+\bibitem[Calvo-Barl{\'e}s et~al.(2025)Calvo-Barl{\'e}s, Rodrigo, and
+  Mart{\'i}n-Moreno]{calvobarles2025equivariance}
+Pablo Calvo-Barl{\'e}s, Sergio~G. Rodrigo, and Luis Mart{\'i}n-Moreno.
+\newblock Learning finite symmetry groups of dynamical systems via equivariance
+  detection.
+\newblock arXiv:2503.03014, 2025.
+
+\bibitem[Chen et~al.(2020)Chen, Dobriban, and Lee]{chen2020group}
+Shuxiao Chen, Edgar Dobriban, and Jane~H. Lee.
+\newblock A group-theoretic framework for data augmentation.
+\newblock \emph{Journal of Machine Learning Research}, 21\penalty0
+  (245):\penalty0 1--71, 2020.
+
+\bibitem[Dale et~al.(2026)Dale, Rodu, and Baiocchi]{dale2026synthetic}
+Reid Dale, Jordan Rodu, and Mike Baiocchi.
+\newblock Synthetic data, information, and prior knowledge: Why synthetic data
+  augmentation to boost sample doesn't work for statistical inference, 2026.
+
+\bibitem[Dao et~al.(2019)Dao, Gu, Ratner, Smith, De~Sa, and
+  R{\'e}]{dao2019kernel}
+Tri Dao, Albert Gu, Alexander Ratner, Virginia Smith, Chris De~Sa, and
+  Christopher R{\'e}.
+\newblock A kernel theory of modern data augmentation.
+\newblock In \emph{Proceedings of the 36th International Conference on Machine
+  Learning}, volume~97 of \emph{Proceedings of Machine Learning Research},
+  pages 1528--1537. PMLR, 2019.
+
+\bibitem[Dohmatob et~al.(2024)Dohmatob, Feng, and
+  Kempe]{dohmatob2024regression}
+Elvis Dohmatob, Yunzhen Feng, and Julia Kempe.
+\newblock Model collapse demystified: The case of regression.
+\newblock In \emph{Advances in Neural Information Processing Systems}, 2024.
+
+\bibitem[Gevers(2005)]{gevers2005identification}
+Michel Gevers.
+\newblock Identification for control: From the early achievements to the
+  revival of experiment design.
+\newblock \emph{European Journal of Control}, 11\penalty0 (4--5):\penalty0
+  335--352, 2005.
+
+\bibitem[Hjalmarsson(2005)]{hjalmarsson2005experiment}
+H{\aa}kan Hjalmarsson.
+\newblock From experiment design to closed-loop control.
+\newblock \emph{Automatica}, 41\penalty0 (3):\penalty0 393--438, 2005.
+
+\bibitem[Huan et~al.(2024)Huan, Jagalur, and Marzouk]{huan2024oed}
+Xun Huan, Jayanth Jagalur, and Youssef Marzouk.
+\newblock Optimal experimental design: Formulations and computations.
+\newblock \emph{Acta Numerica}, 33:\penalty0 715--840, 2024.
+\newblock \doi{10.1017/S0962492924000023}.
+
+\bibitem[Ibrahim and Chen(2000)]{ibrahim2000power}
+Joseph~G. Ibrahim and Ming-Hui Chen.
+\newblock Power prior distributions for regression models.
+\newblock \emph{Statistical Science}, 15\penalty0 (1):\penalty0 46--60, 2000.
+\newblock \doi{10.1214/ss/1009212673}.
+
+\bibitem[Janner et~al.(2019)Janner, Fu, Zhang, and Levine]{janner2019mbpo}
+Michael Janner, Justin Fu, Marvin Zhang, and Sergey Levine.
+\newblock When to trust your model: Model-based policy optimization.
+\newblock In \emph{Advances in Neural Information Processing Systems}, 2019.
+
+\bibitem[Janot et~al.(2019)Janot, Gautier, and Brunot]{janot2019emps}
+A.~Janot, M.~Gautier, and M.~Brunot.
+\newblock Data set and reference models of {EMPS}.
+\newblock In \emph{2019 Workshop on Nonlinear System Identification
+  Benchmarks}, Eindhoven, The Netherlands, April 10--12, 2019.
+
+\bibitem[Kapteyn et~al.(2021)Kapteyn, Pretorius, and
+  Willcox]{kapteyn2021probabilistic}
+Michael~G. Kapteyn, Jacob V.~R. Pretorius, and Karen~E. Willcox.
+\newblock A probabilistic graphical model foundation for enabling predictive
+  digital twins at scale.
+\newblock \emph{Nature Computational Science}, 1:\penalty0 337--347, 2021.
+\newblock \doi{10.1038/s43588-021-00069-0}.
+
+\bibitem[Kim and Sreenath(2026)]{kim2026wombet}
+Mintae Kim and Koushil Sreenath.
+\newblock {WOMBET}: World model-based experience transfer for robust and
+  sample-efficient reinforcement learning.
+\newblock In \emph{Proceedings of the 8th Annual Learning for Dynamics and
+  Control Conference}, volume 331 of \emph{Proceedings of Machine Learning
+  Research}, 2026.
+
+\bibitem[Lanier et~al.(2026)Lanier, Kim, Karamzade, Liu, Sinha, He, Corsi, and
+  Fox]{lanier2026redraw}
+JB~Lanier, Kyungmin Kim, Armin Karamzade, Yifei Liu, Ankita Sinha, Kathleen He,
+  Davide Corsi, and Roy Fox.
+\newblock Adapting world models with latent-state dynamics residuals.
+\newblock In \emph{Proceedings of the 8th Annual Learning for Dynamics and
+  Control Conference}, volume 331 of \emph{Proceedings of Machine Learning
+  Research}, 2026.
+
+\bibitem[Li et~al.(2026)Li, Sun, and Deng]{li2026information}
+Hanyu Li, Zhengqi Sun, and Xiaotie Deng.
+\newblock An information-theoretic criterion for efficient data synthesis.
+\newblock In \emph{Proceedings of the 43rd International Conference on Machine
+  Learning}, volume 306 of \emph{Proceedings of Machine Learning Research},
+  pages 70064--70075. PMLR, 2026.
+
+\bibitem[Ljung(1999)]{ljung1999system}
+Lennart Ljung.
+\newblock \emph{System Identification: Theory for the User}.
+\newblock Prentice Hall, 2nd edition, 1999.
+
+\bibitem[N{\"a}f et~al.(2026)N{\"a}f, Moffat, Eising, and
+  D{\"o}rfler]{naf2026choose}
+Joshua N{\"a}f, Keith Moffat, Jaap Eising, and Florian D{\"o}rfler.
+\newblock Choose wisely: Data-driven predictive control for nonlinear systems
+  using online data selection.
+\newblock In \emph{Proceedings of the 8th Annual Learning for Dynamics and
+  Control Conference}, volume 331 of \emph{Proceedings of Machine Learning
+  Research}, 2026.
+
+\bibitem[Nieminen et~al.(2026)Nieminen, Gebreweld, Liuha, Nissinen, Verdugo,
+  Mikkola, and Kutvonen]{nieminen2026synthetic}
+Walter Nieminen, Haben Gebreweld, Arto Liuha, Mikko Nissinen, Mario Verdugo,
+  Aki Mikkola, and Antero Kutvonen.
+\newblock Synthetic data for predictive maintenance: A systematic review and
+  framework for industry 4.0 applications.
+\newblock \emph{Journal of Intelligent Manufacturing}, 2026.
+\newblock \doi{10.1007/s10845-026-02795-6}.
+
+\bibitem[Ordo{\~n}ez-Apraez et~al.(2023)Ordo{\~n}ez-Apraez, Martin, Agudo, and
+  Moreno]{ordonez2023discrete}
+Daniel~F. Ordo{\~n}ez-Apraez, Mario Martin, Antonio Agudo, and Francesc Moreno.
+\newblock On discrete symmetries of robotics systems: A group-theoretic and
+  data-driven analysis.
+\newblock In \emph{Robotics: Science and Systems XIX}, 2023.
+
+\bibitem[Patkar and Youcef-Toumi(2026)]{patkar2026bgcl}
+Abhishek Patkar and Kamal Youcef-Toumi.
+\newblock {BGCL}: Learning constitutive laws for system identification.
+\newblock In \emph{Proceedings of the 8th Annual Learning for Dynamics and
+  Control Conference}, volume 331 of \emph{Proceedings of Machine Learning
+  Research}, 2026.
+
+\bibitem[Raissi et~al.(2019)Raissi, Perdikaris, and
+  Karniadakis]{raissi2019pinn}
+M.~Raissi, P.~Perdikaris, and G.~E. Karniadakis.
+\newblock Physics-informed neural networks: A deep learning framework for
+  solving forward and inverse problems involving nonlinear partial differential
+  equations.
+\newblock \emph{Journal of Computational Physics}, 378:\penalty0 686--707,
+  2019.
+\newblock \doi{10.1016/j.jcp.2018.10.045}.
+
+\bibitem[Rojas et~al.(2007)Rojas, Welsh, Goodwin, and Feuer]{rojas2007robust}
+Cristian~R. Rojas, James~S. Welsh, Graham~C. Goodwin, and Arie Feuer.
+\newblock Robust optimal experiment design for system identification.
+\newblock \emph{Automatica}, 43\penalty0 (6):\penalty0 993--1008, 2007.
+
+\bibitem[Schoukens et~al.(2009)Schoukens, Suykens, and Ljung]{schoukens2009wh}
+J.~Schoukens, J.~Suykens, and L.~Ljung.
+\newblock Wiener-hammerstein benchmark.
+\newblock In \emph{15th IFAC Symposium on System Identification (SYSID 2009)},
+  Saint-Malo, France, July 2009.
+
+\bibitem[Schoukens and No{\"e}l(2017)]{schoukens2017three}
+Maarten Schoukens and Jean-Philippe No{\"e}l.
+\newblock Three benchmarks addressing open challenges in nonlinear system
+  identification.
+\newblock In \emph{20th IFAC World Congress, IFAC-PapersOnLine}, volume~50,
+  pages 448--453, Toulouse, France, 2017.
+\newblock \doi{10.1016/j.ifacol.2017.08.071}.
+
+\bibitem[Schoukens et~al.(2016)Schoukens, Mattsson, Wigren, and
+  No{\"e}l]{schoukens2016tanks}
+Maarten Schoukens, Per Mattsson, Torbj{\"o}rn Wigren, and Jean-Philippe
+  No{\"e}l.
+\newblock Cascaded tanks benchmark combining soft and hard nonlinearities.
+\newblock 4TU.ResearchData, Dataset, 2016.
+
+\bibitem[Shumailov et~al.(2024)Shumailov, Shumaylov, Zhao, Papernot, Anderson,
+  and Gal]{shumailov2024collapse}
+Ilia Shumailov, Zakhar Shumaylov, Yiren Zhao, Nicolas Papernot, Ross Anderson,
+  and Yarin Gal.
+\newblock {AI} models collapse when trained on recursively generated data.
+\newblock \emph{Nature}, 631:\penalty0 755--759, 2024.
+
+\bibitem[Sutton(1990)]{sutton1990dyna}
+Richard~S. Sutton.
+\newblock Integrated architectures for learning, planning, and reacting based
+  on approximating dynamic programming.
+\newblock In \emph{Proceedings of the Seventh International Conference on
+  Machine Learning}, pages 216--224, 1990.
+
+\bibitem[Tahmasebi and Weber(2026)]{tahmasebi2026adaptive}
+Behrooz Tahmasebi and Melanie Weber.
+\newblock Adaptive symmetry discovery for dynamical system identification.
+\newblock In \emph{Proceedings of the 43rd International Conference on Machine
+  Learning}, volume 306 of \emph{Proceedings of Machine Learning Research},
+  pages 118056--118083. PMLR, 2026.
+
+\bibitem[Valperga et~al.(2022)Valperga, Webster, Turaev, Klein, and
+  Lamb]{valperga2022reversible}
+Riccardo Valperga, Kevin Webster, Dmitry Turaev, Victoria Klein, and Jeroen
+  Lamb.
+\newblock Learning reversible symplectic dynamics.
+\newblock In \emph{Proceedings of the 4th Annual Learning for Dynamics and
+  Control Conference}, volume 168 of \emph{Proceedings of Machine Learning
+  Research}, pages 906--916. PMLR, 2022.
+
+\bibitem[Wang et~al.(2021)Wang, Walters, and Yu]{wang2021symmetry}
+Rui Wang, Robin Walters, and Rose Yu.
+\newblock Incorporating symmetry into deep dynamics models for improved
+  generalization.
+\newblock In \emph{International Conference on Learning Representations}, 2021.
+
+\bibitem[Wang et~al.(2022)Wang, Walters, and Yu]{wang2022data}
+Rui Wang, Robin Walters, and Rose Yu.
+\newblock Data augmentation vs. equivariant networks: A theory of
+  generalization on dynamics forecasting, 2022.
+
+\bibitem[Wigren and Schoukens(2013)]{wigren2013three}
+Torbj{\"o}rn Wigren and Johan Schoukens.
+\newblock Three free data sets for development and benchmarking in nonlinear
+  system identification.
+\newblock In \emph{2013 European Control Conference (ECC)}, pages 2933--2938,
+  Zurich, Switzerland, 2013.
+\newblock \doi{10.23919/ECC.2013.6669201}.
+
+\bibitem[Wuttke et~al.(2026)Wuttke, Kunert, and Hunker]{wuttke2026digital}
+Alexander Wuttke, Julia Kunert, and Joachim Hunker.
+\newblock Literature review of data analysis techniques for condition
+  monitoring in digital twin-enabled condition-based maintenance.
+\newblock \emph{Procedia CIRP}, 146:\penalty0 589--594, 2026.
+\newblock \doi{10.1016/j.procir.2026.03.269}.
+
+\bibitem[Yang et~al.(2023)Yang, Walters, Dehmamy, and Yu]{yang2023liegan}
+Jianke Yang, Robin Walters, Nima Dehmamy, and Rose Yu.
+\newblock Generative adversarial symmetry discovery.
+\newblock In \emph{Proceedings of the 40th International Conference on Machine
+  Learning}, volume 202 of \emph{Proceedings of Machine Learning Research},
+  2023.
+
+\bibitem[Yang et~al.(2024)Yang, Rao, Dehmamy, Walters, and
+  Yu]{yang2024symmetry}
+Jianke Yang, Wang Rao, Nima Dehmamy, Robin Walters, and Rose Yu.
+\newblock Symmetry-informed governing equation discovery.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~37, 2024.
+
+\end{thebibliography}

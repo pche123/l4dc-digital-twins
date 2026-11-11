@@ -1,0 +1,82 @@
+{
+  "phase": "Phase 3 decisive gate",
+  "frozen_before_outcomes": true,
+  "date": "2026-10-31",
+  "purpose": "Test whether external dynamical information, rather than fitted-model consistency or extra exposure, is the source of augmentation value; test whether first-order Hankel spectrum preservation itself changes the value of time warp.",
+  "literature_informed_novelty_target": [
+    "fitted-model self-consistency as a forecasting-specific failure mode",
+    "duplicate-adjusted synthetic content value",
+    "dynamical-fidelity versus learner-value separation",
+    "forecast-horizon dependence"
+  ],
+  "lorenz": {
+    "dt": 0.01,
+    "trajectory_length": 36,
+    "observational_noise_sd": 0.015,
+    "train_trajectories": 2,
+    "training_wing": "positive x",
+    "minimum_training_wing_fraction": 0.95,
+    "tuning_windows_each_wing": 5,
+    "headroom_windows_each_wing": 5,
+    "test_windows_each_wing": 10,
+    "seeds": 30,
+    "lag": 4,
+    "forecast_horizons": [1,4,8],
+    "learners": ["ridge","mlp"],
+    "ridge_alpha_grid": [1e-6,1e-5,1e-4,1e-3,1e-2,1e-1,1.0,10.0],
+    "mlp_alpha_grid": [1e-6,1e-5,1e-4,1e-3,1e-2,1e-1],
+    "mlp_hidden": [32,32],
+    "arms": [
+      "base",
+      "duplicate",
+      "fitted_model",
+      "false_symmetry",
+      "true_symmetry",
+      "extra_real",
+      "oracle_simulator",
+      "time_warp",
+      "time_warp_spectrum_projected"
+    ],
+    "true_symmetry": "(x,y,z)->(-x,-y,z)",
+    "false_symmetry": "(x,y,z)->(-x,y,z)",
+    "time_warp_target_relative_movement": 0.03,
+    "spectrum_projection": "orthogonal trajectory-space projection onto kernel of the first-order source Hankel singular-value Jacobian, then rescale to the original time-warp movement",
+    "hyperparameter_policy": {
+      "fixed_base_alpha": "choose alpha using TRAIN and tuning split on the unaugmented base, then reuse for every arm; ridge only",
+      "retuned_alpha": "choose alpha independently for each arm using TRAIN plus that arm and the tuning split; primary fair regularization comparison"
+    },
+    "headroom_selection": "defined only on the independent headroom calibration split using retuned hyperparameters; TEST is never used to decide eligibility",
+    "headroom_threshold_relative": 0.10,
+    "minimum_eligible_seeds": 12
+  },
+  "success_criteria": {
+    "primary_learner": "mlp retuned_alpha",
+    "true_symmetry": {
+      "mean_fraction_of_extra_real_test_gap": 0.25,
+      "paired_bootstrap_95ci_lower_for_test_gain": 0.0
+    },
+    "false_symmetry_equivalence": {
+      "band_as_fraction_of_mean_extra_real_test_gap": 0.10,
+      "paired_bootstrap_ci": 0.90,
+      "criterion": "CI for mean test gain lies fully inside +/- band"
+    },
+    "fitted_model_equivalence": {
+      "band_as_fraction_of_mean_extra_real_test_gap": 0.10,
+      "paired_bootstrap_ci": 0.90,
+      "criterion": "CI for mean test gain lies fully inside +/- band"
+    },
+    "spectrum_projection_equivalence": {
+      "band_as_fraction_of_mean_extra_real_test_gap": 0.10,
+      "paired_bootstrap_ci": 0.90,
+      "criterion": "CI for paired difference in test gain between projected and ordinary time warp lies fully inside +/- band"
+    },
+    "oracle_diagnostic": "oracle simulator should approach extra-real benefit; diagnostic, not a gate"
+  },
+  "interpretation_rules": [
+    "Do not filter or redefine cells using TEST outcomes.",
+    "If fewer than 12 primary-learner seeds pass calibration headroom, declare the design underpowered/no-headroom and redesign rather than interpret synthetic nulls.",
+    "Do not describe fitted-model zero-update as universal: exact zero update requires generator and learner to coincide in representation and fitted map.",
+    "Residual alignment is diagnostic only and is not used to choose or generate candidates.",
+    "Anytime/betting confidence sequences are not part of this decisive batch gate."
+  ]
+}
