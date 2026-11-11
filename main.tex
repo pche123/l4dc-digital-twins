@@ -21,11 +21,6 @@
 \newcommand{\ProofSketch}{\paragraph{Proof sketch.}}
 \newcommand{\Intuition}{\paragraph{Intuition.}}
 
-\setlength{\abovedisplayskip}{5pt plus 1pt minus 2pt}
-\setlength{\belowdisplayskip}{5pt plus 1pt minus 2pt}
-\setlength{\textfloatsep}{7pt plus 2pt minus 2pt}
-\setlength{\floatsep}{6pt plus 2pt minus 2pt}
-\setlength{\intextsep}{6pt plus 2pt minus 2pt}
 
 \author{%
  \Name{Prasad Cheema} \Email{prasad@nii.ac.jp}\\
@@ -40,7 +35,7 @@
 \maketitle
 
 \begin{abstract}%
-Digital twins can generate unlimited trajectories, but synthetic rows are not automatically evidence about the physical system. The data-processing observation that a generator cannot create information absent from its inputs is familiar; its consequences for system identification are less so. First, self-labelled trajectories leave a learner's own ridge fit unchanged yet, when counted as independent measurements, manufacture confidence: a closed-form law predicts nominal 90\% interval coverage falling to $0.53$ on a maintenance twin (within $0.011$ empirically). Second, physical correctness does not determine downstream utility. A deployment-weighted excitation theorem characterizes beneficial updates and interior optimal exposure to biased generators; in a separate one-step Duffing noise intervention, a false reflection changes from helping 0/40 seeds without observation noise to 40/40 at nominal noise. Third, provenance does not certify a proposed law or symmetry. A fitted equivariance defect is bounded by the verifier's error on observed and reflected states, making certification easiest where that verifier already extrapolates well---often where the structure helps it least, even if another learner benefits. A finite-sample certificate is possible under explicit coefficient and noise bounds; the practical gate is a selective screen, with one wrong acceptance among 167 pooled acceptances (one in four in its hardest setting). Experiments include Lorenz, Duffing, four real benchmarks, and a predictive-maintenance twin. We offer a framework for deciding what synthetic trajectories contain, when learners benefit, and what can be trusted before use.%
+Digital twins generate unlimited trajectories, but synthetic data need not provide new evidence about a physical system. We separate information provenance, learner response, and pre-use verification. First, self-labelled trajectories leave their own ridge fit unchanged yet manufacture confidence when counted as independent measurements: a closed-form law predicts nominal 90\% interval coverage falling to $0.53$ on a maintenance twin. Second, a deployment-weighted excitation theorem explains when physically wrong generators improve misspecified learners and why biased sources may have an interior optimal exposure. In a Duffing noise intervention, a false reflection changes from helping 0/40 noise-free seeds to 40/40 at nominal noise. Third, an equivariance-defect bound reveals a verification--value tension: structural claims are easiest to screen where the verifier already extrapolates well. A conditional finite-sample certificate complements a practical gate that makes one wrong acceptance among 167 pooled acceptances (one of four in its hardest setting). Experiments cover Lorenz, Duffing, four real system-identification benchmarks, and a predictive-maintenance twin.%
 \end{abstract}
 
 \begin{keywords}%
@@ -240,16 +235,16 @@ The plausible wrong twin also helps ($sm>0$), but the correct one's paired advan
 \caption{\textbf{Why selection and uncertainty need separate checks.} (a) Correct and wrong acceptances at representative thresholds (ratio fixed at $0.5$; 30--40 seeds; full sweep in Supplement~\ref{app:riskcov}). (b) Twin: certification rate versus correct-law gain across 12 wear--noise conditions (colours: noise). (c) Nominal 90\% coverage (medians, 40 seeds); dotted: Proposition~\ref{prop:overconf}(a).}
 \label{fig:limits}
 \end{figure}
-\paragraph{What the gate risks.} In the 180 symmetry decisions, increasing the defect threshold from $0.5$ to $1.5$ raises Lorenz acceptances from 17 to 23/30 with no wrong acceptance; errors emerge at $2$ (Fig.~\ref{fig:limits}a; Supplement~\ref{app:riskcov}). The finite-sample bound (Theorem~\ref{thm:selective}) also depends on verifier leverage at reflected states and certifies nothing from one-sided data. The practical gate remains a screen. Pooled risk conceals a serious corner case: the twin's one wrong law is one of four acceptances in its setting, versus 1 in 167 overall.
+\paragraph{What the gate risks.} Across 180 symmetry decisions, raising the defect threshold from $0.5$ to $1.5$ increases Lorenz acceptances from 17 to 23/30 without a wrong acceptance; errors appear at $2$ (Fig.~\ref{fig:limits}a; Supplement~\ref{app:riskcov}). The finite-sample certificate depends on reflected-state leverage and cannot certify from one-sided data (Theorem~\ref{thm:selective}). The practical gate is only a screen: the twin's one wrong-law acceptance occurs among four acceptances in that setting, versus 1/167 pooled.
 
-\paragraph{Certified where least needed.} Across twelve twin settings (Fig.~\ref{fig:limits}b), certification is most frequent without noise, where the law slightly hurts ($h=20$: $-0.03$), and absent at nominal or greater noise, where the law rescues a diverging learner (gains $0.27$ to $>10^3$). This mirrors the symmetry result in Proposition~\ref{prop:sandwich}.
+\paragraph{Certified where least needed.} Across twelve twin settings (Fig.~\ref{fig:limits}b), the gate certifies most often without noise, where the law slightly hurts ($h=20$: $-0.03$), but not at nominal or higher noise, where it rescues a diverging learner (gains $0.27$ to $>10^3$). This echoes Proposition~\ref{prop:sandwich}.
 
-\paragraph{Counting synthetic rows as independent manufactures confidence.} This dependence problem is known; here we quantify its size and test remedies.
+\paragraph{Synthetic rows manufacture confidence.} We quantify the known dependence problem and test remedies.
 \begin{proposition}[Naive synthetic overconfidence]\label{prop:overconf}
 Let $Y=\Phi\theta_\star+E$ with $E\sim\mathcal N(0,\sigma^2I_n)$ and $p$ parameters, and add $m$ self-labelled rows $(C,C\widehat\theta)$ with weight $\rho$. A pipeline that counts them as observations keeps $\widehat\theta$ (Corollary~\ref{cor:self}) but estimates $\widehat\sigma_\rho^2=k\,\widehat\sigma_0^2$ with $k=\frac{n-p}{n+\rho m-p}$, and its predictive interval at $x$ narrows by $\sqrt{k\,(1+\ell_\rho(x))/(1+\ell_0(x))}$, where $\ell_\rho(x)=x^\top(H+\rho C^\top C)^{-1}x$. (a) Where leverage is negligible, the coverage of a nominal $1-\alpha$ interval tends to $2\Phi(z_{\alpha/2}\sqrt k)-1$ as $n\to\infty$ with $\rho m/n$ fixed. (b) Estimating $\sigma^2$ from the real rows sets $k=1$ but keeps the leverage factor, which bites where $\ell_0(x)$ is large: in the unseen regime.
 \end{proposition}
 \ProofSketch Self-labels have zero residual, so the weighted residual sum is unchanged while the degrees of freedom grow by $\rho m$; the predictive variance is $\widehat\sigma^2(1+\ell(x))$, and $\widehat\sigma_0\to\sigma$ (Supplement~\ref{app:coverage}). \hfill$\square$
-\Intuition Self-labels look like perfect measurements and falsely reduce estimated noise. The law predicts coverage within $0.011$ at every exposure (Fig.~\ref{fig:limits}c; $0.536$ predicted versus $0.530$ at $\rho=8$). Noiseless law labels behave similarly ($0.539$), whereas fresh real data retain $0.90$ coverage. Estimating noise from real rows repairs law-label coverage ($0.88$--$0.90$), but not self-labels in the unseen regime ($0.74$ versus $0.39$ naively).
+\Intuition Self-labels falsely reduce estimated noise; the law predicts coverage within $0.011$ at every exposure ($0.536$ predicted versus $0.530$ at $\rho=8$; Fig.~\ref{fig:limits}c). Noiseless law labels behave similarly ($0.539$), while fresh real data retain $0.90$ coverage. Estimating noise from real rows repairs law-label coverage ($0.88$--$0.90$), but not unseen-regime self-label coverage ($0.74$ versus $0.39$ naively).
 
 
 \begin{table}[t]
@@ -268,11 +263,10 @@ Neither & Self-generated trajectories are not evidence about unseen dynamics and
 \end{table}
 
 \section{Discussion and conclusion}
-The information-closure baseline is familiar; the operational lesson is not. A digital twin can be uninformative yet make its learner overconfident, physically incorrect yet improve deployment prediction, or structurally plausible yet impossible to certify from the observed regime. These outcomes are not contradictions: \emph{information provenance}, \emph{learner-relative value}, and \emph{verifier reliability} answer different questions. A small LQR check reduces closed-loop cost excess from $77\%$ to under $3\%$, but does not establish an advantage for the gate (Supplement~\ref{app:closedloop}).
-\paragraph{Implication for digital-twin practice.} Record what knowledge each trajectory encodes; compare its downstream value against equal-size duplication, not only against no augmentation; calibrate uncertainty on independent real observations; and treat screening abstention as a request for coverage rather than proof that the physics is false. These are testable safeguards, not a guarantee that generated trajectories are useful or correct (Table~\ref{tab:regimes}). \textbf{Limitations:} ridge theory, sign-flip candidates, a simulated twin, and one device per real benchmark (Supplement~\ref{app:evaluation-profile}). \textbf{Code and archived data:} \url{https://github.com/pche123/l4dc-digital-twins}.
+Provenance, utility, and verification must be separated: self-generated data add no physical evidence yet can inflate confidence; wrong dynamics may improve a misspecified learner; and plausible structure may be impossible to certify. An LQR check reduces closed-loop cost excess from $77\%$ to under $3\%$, without establishing an advantage for the gate (Supplement~\ref{app:closedloop}).
+\paragraph{Practical implications.} Compare synthetic blocks with equal-size duplication, calibrate uncertainty using independent real observations, and treat screening abstention as a request for more coverage rather than proof that a law is false (Table~\ref{tab:regimes}). \textbf{Limitations:} ridge theory, sign-flip candidates, a simulated twin, and one device per real benchmark (Supplement~\ref{app:evaluation-profile}). \textbf{Code and archived data:} \url{https://github.com/pche123/l4dc-digital-twins}.
 
-
-\paragraph{Generative AI Use.} Generative AI tools assisted ideation, derivations, coding, figures (including the illustrative renderings in Figure~\ref{fig:hero} and Supplement Figure~\ref{fig:emps-twin}), literature search and editing; the authors verified all AI-assisted content and take responsibility for the paper.
+\paragraph{Generative AI Use.} Generative AI assisted ideation, derivations, coding, figures (including the illustrative renderings in Figure~\ref{fig:hero} and Supplement Figure~\ref{fig:emps-twin}), literature search and editing; the authors verified all AI-assisted content and take responsibility for the paper.
 
 \acks{This work was supported by JST CREST Grant Number JPMJCR22D3, ``Machine Learning That Connects to Symbolic Reasoning.''}
 \bibliography{refs}
