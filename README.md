@@ -5,7 +5,7 @@
 **Prasad Cheema · Mahito Sugiyama**  
 National Institute of Informatics, Tokyo · L4DC 2027 submission
 
-[**Earlier paper snapshot**](paper.pdf) · [**Figure/table → code map**](docs/PAPER_REPRODUCTION_MAP.md) · [**Reproduce experiments**](docs/REPRODUCIBILITY.md) · [**External benchmark inputs**](docs/DATA_SOURCES.md) · [**Additional experimental scripts**](docs/ADDITIONAL_EXPERIMENT_SCRIPTS.md)
+[**Figure/table → code map**](docs/PAPER_REPRODUCTION_MAP.md) · [**Reproduce experiments**](docs/REPRODUCIBILITY.md) · [**External benchmark inputs**](docs/DATA_SOURCES.md) · [**Additional experimental scripts**](docs/ADDITIONAL_EXPERIMENT_SCRIPTS.md)
 
 ![Framework overview](figures/overview.png)
 
@@ -55,13 +55,6 @@ python scripts/reproduce.py --group duffing
 
 New outputs are written to `.runs/`; the original archived `data/` files are **never overwritten**. Consult [the reproducibility guide](docs/REPRODUCIBILITY.md) for the other experimental groups and the exact scope of verification.
 
-## Current submission files
-
-The November 2026 L4DC submission has a **separate main PDF and supplementary PDF**. The checked-in `paper.pdf`, `main.tex`, and `supplement.tex` reflect an earlier repository snapshot and are **not** the authoritative files for the revised separate-upload submission. The four newly recovered experiment scripts and their reproduction caveats are listed [here](docs/ADDITIONAL_EXPERIMENT_SCRIPTS.md).
-
-## Compiling the paper
-
-The root directory is a self-contained Overleaf project. Upload a ZIP of the repository to Overleaf, choose `main.tex` as the main document, and compile using **pdfLaTeX**. A clean local build has been verified. The LaTeX source includes the bibliography and all graphics used in the manuscript.
 
 ## Reproducibility and data availability
 
