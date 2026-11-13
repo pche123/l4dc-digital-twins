@@ -1,11 +1,11 @@
-# When Do Synthetic Trajectories Count as Evidence?
+# When Does Digital-Twin Data Count as Evidence?
 
-### Information, Utility, and Verification in Digital Twins
+### Identifiability, Value, and Verification of Synthetic Trajectories
 
 **Prasad Cheema · Mahito Sugiyama**  
 National Institute of Informatics, Tokyo · L4DC 2027 submission
 
-[**Read the paper**](paper.pdf) · [**Figure/table → code map**](docs/PAPER_REPRODUCTION_MAP.md) · [**Reproduce experiments**](docs/REPRODUCIBILITY.md) · [**External benchmark inputs**](docs/DATA_SOURCES.md)
+[**Earlier paper snapshot**](paper.pdf) · [**Figure/table → code map**](docs/PAPER_REPRODUCTION_MAP.md) · [**Reproduce experiments**](docs/REPRODUCIBILITY.md) · [**External benchmark inputs**](docs/DATA_SOURCES.md) · [**Additional experimental scripts**](docs/ADDITIONAL_EXPERIMENT_SCRIPTS.md)
 
 ![Framework overview](figures/overview.png)
 
@@ -54,6 +54,10 @@ python scripts/reproduce.py --group duffing
 ```
 
 New outputs are written to `.runs/`; the original archived `data/` files are **never overwritten**. Consult [the reproducibility guide](docs/REPRODUCIBILITY.md) for the other experimental groups and the exact scope of verification.
+
+## Current submission files
+
+The November 2026 L4DC submission has a **separate main PDF and supplementary PDF**. The checked-in `paper.pdf`, `main.tex`, and `supplement.tex` reflect an earlier repository snapshot and are **not** the authoritative files for the revised separate-upload submission. The four newly recovered experiment scripts and their reproduction caveats are listed [here](docs/ADDITIONAL_EXPERIMENT_SCRIPTS.md).
 
 ## Compiling the paper
 
